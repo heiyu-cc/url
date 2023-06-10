@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>黑域支付</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="section">
+                <h1 class="title">黑域Pay</h1>
+                <div class="desc">
+                    <i class="ico error"></i>
+                    网站维护升级中，请添加客服微信
+                </div>
+                <div class="tp-tabs__bar">
+                    <div class="tab">
+                        <div class="tab_list">
+                            <ul style="transition: transform 0.5s ease-out 0s; transform: translate3d(0px, 0px, 0px);">
+                                <li class="current">网址入口</li>
+                                <li>客服微信</li>
+                            </ul>
+                        </div>
+                        <div class="tab_con">
+                            <div class="item geren" style="display:block">
+                                <h2>请 Ctrl+D 收藏本页到浏览器收藏夹，防止失联</h2>
+                                <p>黑域博客网：heiyu.cc</p>
+                                <div class="litearr">
+								    最新网址发布（<font color="red">请收藏此网址</font>） <br>
+								    <a href="https://1.heiyu.cc/" target="_blank"><i>https://1.heiyu.cc/</i></a>
+								</div>
+								<div class="litearr">
+								    易支付（<font color="red">epay.cikr.cn</font>） <br>
+								    <a href="https://epay.cikr.cn/" target="_blank"><i>https://epay.cikr.cn/</i></a>
+								</div>
+								<div class="litearr">
+								    码支付（<font color="red">mzf.cikr.cn</font>）未上线 <br>
+								    <a href="https://mzf.cikr.cn/" target="_blank"><i>https://mzf.cikr.cn/</i></a>
+								</div>
+								<div class="litearr">
+								    聚合登录（<font color="red">dl.heiyu.cc</font>）未上线 <br>
+								    <a href="https://dl.heiyu.cc/" target="_blank"><i>https://dl.heiyu.cc/</i></a>
+								</div>
+								<div class="litearr">
+								    弃用域名（<font color="red">历史使用</font>） <br>
+								    <del><i>zisc.cn [被劫持]</i></del>
+								    <del><i>sudakm.com [被劫持]</i></del>
+								    <del><i>pdael.com [到期未续费]</i></del>
+								</div>
+								网址失效会及时在本页更换，若打不开网址且本页面没有更新网址，请用户自行排查是否为软件拦截。更换浏览器访问！
+                            </div>
+                            <div class="item geren">
+                                <img src="img/grwx.png" alt="个人号">
+                                <p>长按二维码识别</p>
+                                <br>
+                                <p>微信号：13013316025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // tab栏核心思想利用排它算法
+                let listItemArr = document.querySelectorAll('li')
+                let itemArr = document.getElementsByClassName('item')
+                for (let index = 0; index < listItemArr.length; index++) {
+                    // 循环添加事件
+                    listItemArr[index].onclick = function() {
+                        // 其余人清除 还得用for循环
+                        for (let i = 0; i < listItemArr.length; i++) {
+                            listItemArr[i].className = ''
+                        }
+                        // 留下自己
+                        this.className = 'current'
+                        // 下面的显示内容的模块 其他的隐藏 一种做法
+                        for (let i = 0; i < listItemArr.length; i++) {
+                            itemArr[i].style.display = 'none'
+                        }
+                        itemArr[index].style.display = 'block'
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

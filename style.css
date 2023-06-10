@@ -1,0 +1,292 @@
+html {
+    
+}
+
+body {
+    line-height: 1.4;
+    color: rgba(0,0,0,.8);
+    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, figure, font, form, h1, h2, h3, h4, h5, h6, html, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type:none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+/*正文开始*/
+.section {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    min-height: 40vh;
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #000;
+}
+
+@media screen and (max-width: 740px) {
+    .title {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 800;
+    }
+}
+
+.desc {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+}
+
+@media screen and (max-width: 392px) {
+    .tab_list>ul {
+        display: block!important;
+    }
+    .geren img {
+        width: 200px!important;
+    }
+    .desc {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+.tab {
+    margin-top: 36px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    text-align: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.tab_list>ul {
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: unset;
+    background: #e7f7fb;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.tab_list>ul>li {
+    color: #262626;
+    border-radius: 12px;
+    padding: 10px 53px;
+    cursor: pointer;
+}
+
+.tab_list>ul>li:hover,.tab_list>ul>li.current:hover {
+    border-radius: 12px;
+}
+
+.geren:hover {
+    border-color: rgba(8,168,156,.6);
+    box-shadow: 0 2px 16px rgba(8,168,156,.3);
+    cursor: pointer
+}
+
+.tab_list>ul>li.current {
+    background-color: #409EFF;
+    color: #30a59c;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgba(139,167,198,.4);
+    border-radius: 12px;
+    padding: 10px 53px;
+    cursor: pointer;
+}
+
+.tab_con>.item {
+    margin-top: 20px;
+    display: none;
+    max-width: 490px;
+}
+
+.geren {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 0 3px 22px rgba(139,167,198,.2);
+    border-radius: 17px;
+    padding: 26px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.geren img {
+    width: 300px;
+    border-radius: 12px;
+}
+/*--------------------------------------------------------------*/
+.yun-servers-box {
+    font-size: 28px;
+    padding: 50px 0;
+    margin-bottom: 16px;
+}
+.c-section-inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 10px
+}
+@media screen and (max-width: 1000px) {
+    .c-section-inner {
+        padding:0 20px
+    }
+}
+.c-section-hd {
+    margin-bottom: 55px;
+}
+
+.c-grid {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.c-grid [class*=c-g-] {
+    display: inline-block;
+    zoom: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.c-g-6 {
+    width: 25%;
+}
+.yun-servers-box .ape-service-card {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 110px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 20px 0 rgba(55,99,170,.1), -8px -8px 20px 0 #fff;
+    border-radius: 4px;
+    transition: all .3s linear;
+    -webkit-font-smoothing: antialiased;
+}
+.ape-motion {
+    transition: transform .3s ease-in-out;
+}
+.yun-servers-box .ape-service-card .ape-service-card__hd {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 8px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.ape-motion:hover {
+    transform: translateY(-3px);
+}
+
+.ico {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-size: 18px;
+    background-position: 50%;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+}
+.error {
+    background-image: url(img/error.svg);
+}
+
+.item h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #232931;
+    padding: 12px;
+    border-radius: 5px;
+}
+.item .litearr {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.8em;
+    padding: 1em 0 1em 1em;
+    border-bottom: 1px solid #e2e0de;
+}
+
+.item .litearr a i {
+    color: #02a982;
+    font-style: normal;
+    display: block;
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+.item .litearr i {
+    font-style: normal;
+}
+
+.item .litearr del {
+    color: #02a982;
+    font-style: normal;
+    display: block;
+    font-size: 16px;
+}
